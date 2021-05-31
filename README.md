@@ -10,8 +10,9 @@
 ## 3. Create a Samba Public Share Without Authentication
 
 #`nano /etc/samba/smb.conf`
->	[public]
->		comment = no need username and password
+> [public]
+>
+>	    comment = no need username and password
 >		path = /samba/public
 >		browsable = yes
 >		guest ok = yes
@@ -25,6 +26,7 @@
 #`systemctl restart smbd.service nmbd.service`
 
 #`scp /root/username.ovpn /samba/public`
-4. Port Forwading
+
+## 4. Port Forwading
 	1194
-5. VPN client
+## 5. VPN client
