@@ -10,9 +10,8 @@
 ## 3. Create a Samba Public Share Without Authentication
 
 #`nano /etc/samba/smb.conf`
-> [public]
->
->	    comment = no need username and password
+> 	    [public]
+>       comment = no need username and password
 >		path = /samba/public
 >		browsable = yes
 >		guest ok = yes
